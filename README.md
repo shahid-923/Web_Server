@@ -1,14 +1,14 @@
-Web_Server – Go HTTP Server
+**Web_Server – Go HTTP Server**
 
 A lightweight and beginner-friendly HTTP server built in Go, demonstrating how to:
 
-Serve static files
+**Serve static files**
 1.Handle GET and POST routes
 2.Read form input
 3.Use Go’s net/http package to build simple web applications
 4.This project is ideal for beginners learning backend development with Go.
 
-Project Structure 
+**Project Structure**
 Web_Server/
 │── main.go
 │
@@ -16,21 +16,22 @@ Web_Server/
     │── index.html
     │── form.html
 
-Features
+**Features**
 ✔ Serve Static Files
-
 The server automatically serves files inside the static/ folder (HTML, CSS, JS).
 
 ✔ Custom Routes
 /hello → Handles GET requests
 /form → Handles POST form submissions
 / → Serves index.html
+
 ✔ Form Handling
 Accepts user input (name & address) and responds dynamically.
+
 ✔ Simple, clean Go code
 Uses only Go’s in-built standard library — no external packages.
 
-Installation & Usage
+**Installation & Usage**
 1. Clone the repository
 git clone https://github.com/shahid-923/Web_Server.git
 
@@ -40,19 +41,18 @@ cd Web_Server
 3. Run the server
 go run main.go
 
-
 Your server starts at:
 
 👉 http://localhost:8080/
-🔗 Endpoints Overview
-Route	Method	Description
+**🔗 Endpoints Overview**
+**Route	Method	Description**
 /	GET	Serves index.html
 /hello	GET	Returns “Hello!”
 /form	POST	Accepts name and address fields
 
 
-Code Summary
-Serve static files
+**Code Summary**
+**Serve static files**
 fileServer := http.FileServer(http.Dir("./static"))
 http.Handle("/", fileServer)
 
@@ -81,13 +81,10 @@ func formHandler(w http.ResponseWriter, r *http.Request){
     fmt.Fprintf(w, "Address = %s\n", address)
 }
 
-📝 HTML Files
+**📝 HTML Files**
 index.html
-
 A simple welcome page.
-
 form.html
-
 Form that sends POST data:
 
 <form method="POST" action="/form">
@@ -96,19 +93,14 @@ Form that sends POST data:
     <input type="submit" value="Submit"/>
 </form>
 
-📦 Technologies Used
-
+**📦Technologies Used**
 Go (Golang)
-
 HTML
-
 net/http (Go Standard Library)
 
-🤝 Contributing
-
+**🤝Contributing**
 Contributions and suggestions are welcome.
 Feel free to fork the repo and submit a pull request.
 
-📜 License
-
+**📜License**
 This project is open-source and available under the MIT License.
