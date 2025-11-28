@@ -4,7 +4,7 @@ A lightweight and beginner-friendly HTTP server built in Go, demonstrating how t
 
 **Serve static files**
 1.Handle GET and POST routes
-2.Read form input
+2.Read form input 
 3.Use Go’s net/http package to build simple web applications
 4.This project is ideal for beginners learning backend development with Go.
 
