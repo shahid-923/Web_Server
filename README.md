@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Shahid</h1>
-<h3 align="center">A passionate Go backend and web developer</h3>
+<h3 align="center">A passionate Go backend Developer</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=shahid-923&label=Profile%20views&color=0e75b6&style=flat" alt="shahid-923" /> </p>
 
